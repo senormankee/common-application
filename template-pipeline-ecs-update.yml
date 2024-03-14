@@ -1,0 +1,11 @@
+name: ECS Update
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  ecs:
+    uses: iotsync/common-application/.github/workflows/ecs_update.yml@main
+    secrets: inherit

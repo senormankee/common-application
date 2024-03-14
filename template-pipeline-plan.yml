@@ -1,0 +1,11 @@
+#template-pipeline-yml
+
+name: Terraform Plan
+
+on:
+  push:
+
+jobs:
+  terraform:
+    uses: iotsync/common-application/.github/workflows/terraform_plan.yml@main
+    secrets: inherit

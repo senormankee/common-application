@@ -1,0 +1,11 @@
+name: Docker Build
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  docker:
+    uses: iotsync/common-application/.github/workflows/docker_build.yml@main
+    secrets: inherit

@@ -1,0 +1,11 @@
+name: Terraform Apply
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  terraform:
+    uses: iotsync/common-application/.github/workflows/terraform_apply.yml@main
+    secrets: inherit

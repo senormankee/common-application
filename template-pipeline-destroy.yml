@@ -1,0 +1,11 @@
+name: Terraform Destroy
+
+on:
+  push:
+    branches:
+      - 'destroy'
+
+jobs:
+  terraform:
+    uses: iotsync/common-application/.github/workflows/terraform_destroy.yml@main
+    secrets: inherit
